@@ -1,0 +1,23 @@
+{
+  "name": "labs.embery.co.uk",
+  "version": "0.0.1",
+  "description": "The web experiments of Ben Embery",
+  "repository": {
+    "type": "git",
+    "url": "git+https://benembery@github.com/benembery/benembery.github.io.git"
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "JavaScript"
+  ],
+  "author": "Ben Embery",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/benembery/benembery.github.io/issues"
+  },
+  "homepage": "https://github.com/benembery/benembery.github.io#readme",
+  "devDependencies": {
+    "gulp-less": "^3.3.0"
+  }
+}
