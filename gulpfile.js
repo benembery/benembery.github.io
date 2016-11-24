@@ -15,12 +15,22 @@ var gulp = require('gulp'),
     autoprefix = require('autoprefixer'),
     cssnano = require('cssnano'),
     cssmqp = require('css-mqpacker'),
-    sourcemaps = require('gulp-sourcemaps')
+    sourcemaps = require('gulp-sourcemaps'),
+    assembler = require('./src/assemblefile')
 
 var config = {
     src_less: './assets_src/less/*.less',
     css_output_path: './assets/css'
 }
+
+gulp.task('assemble', function() {
+    return assembler.build(function(err) {
+        if (err) 
+            throw err;
+        
+        gutil.log(gutil.colors.green("✔ assemble complete"))
+    });
+})
 
 gulp.task('default', ['bundle:css'])
 
@@ -44,8 +54,14 @@ gulp.task('set-dev', function() {
 })
 
 
-gulp.task('dev', function () {
-    gulp.watch(config.src_less, ['bundle:css'])
+gulp.task('webserver', function() {
+    var connect = require('gulp-connect')
+    connect.server();
+});
+
+gulp.task('dev', ['webserver'], function () {
+    // gulp.watch(['sass/**/*.scss', 'layouts/**/*.css'], ['css']);
+    //gulp.watch(config.src_less, ['bundle:css'])
 })
 
 
