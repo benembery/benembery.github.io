@@ -23,20 +23,18 @@ var config = {
     css_output_path: './assets/css'
 }
 
-gulp.task('assemble', function() {
-    return assembler.build(function(err) {
+gulp.task('assemble', () => {
+    return assembler.build((err) => {
         if (err) 
-            throw err;
+            throw err
         
         gutil.log(gutil.colors.green("✔ assemble complete"))
-    });
+    })
 })
 
 gulp.task('default', ['bundle:css'])
 
-gulp.task('clean:css', function() {
-    return del(config.css_output_path+'/*.*')
-});
+gulp.task('clean:css', () => del(config.css_output_path+'/*.*'))
 
 gulp.task('bundle:css', ['clean:css'], function () {
     return gulp.src([config.src_less])
@@ -56,12 +54,12 @@ gulp.task('set-dev', function() {
 
 gulp.task('webserver', function() {
     var connect = require('gulp-connect')
-    connect.server();
-});
+    connect.server()
+})
 
-gulp.task('dev', ['webserver'], function () {
-    // gulp.watch(['sass/**/*.scss', 'layouts/**/*.css'], ['css']);
-    //gulp.watch(config.src_less, ['bundle:css'])
+gulp.task('dev', ['webserver'], () => {
+    gulp.watch(['src/pages/*.*', 'src/layouts/*.*'], ['assemble'])
+    gulp.watch(config.src_less, gulp.series('clean:css','bundle:css'))
 })
 
 
