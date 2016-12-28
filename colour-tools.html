@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Colour Palette Tools | Seascape Therapy</title>
+    <meta name="description" content="A few tools to help pick better colour palettes using modern web inputs." />
+    <link href="./assets/css/main.min.css" rel="stylesheet" />
+</head>
+<body>
+<main role="main">
+    <h1>Colour Palette Tools</h1>
+    <div class="input-group">
+        <label for="primary-colour">Brand Colour</label>
+        <input id="primary-colour" type="color" value="#2a0000" class="input-control" />
+    </div>
+    <div class="input-group">
+        <label for="transparency">Transparency</label>
+        <input id="transparency" type="range" min="0" max="100" value="80" class="input-control" />
+    </div>
+    <div class="group" role="presentation">
+        <div class="primary-colour-group">Primary Colour</div>
+        <div class="black-reference-group">Black</div>
+        <div class="resulting-body-colour">
+            <div class="resulting-body-overlay" />Result</div>
+    </div>
+    <div class="result-2">Lets test this out.</div>
+<section class="sample">
+    <h1>Qui est in parvis malis.</h1>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et quidem iure fortasse, sed tamen non gravissimum
+        est testimonium multitudinis. Quos quidem tibi studiose et diligenter tractandos magnopere censeo.
+        <a
+            href='http://loripsum.net/' target='_blank'>Duo Reges: constructio interrete.</a> De quibus cupio scire quid sentias. Si autem id non concedatur,
+            non continuo vita beata tollitur. Nihil opus est exemplis hoc facere longius. Longum est enim ad
+            omnia respondere, quae a te dicta sunt. Inde sermone vario sex illa a Dipylo stadia confecimus. Indicant
+            pueri, in quibus ut in speculis natura cernitur. </p>
+
+    <ol>
+        <li>Tanti autem aderant vesicae et torminum morbi, ut nihil ad eorum magnitudinem posset accedere.</li>
+        <li>Dempta enim aeternitate nihilo beatior Iuppiter quam Epicurus;</li>
+        <li>Quae cum dixisset paulumque institisset, Quid est?</li>
+    </ol>
+
+
+    <dl>
+        <dt><dfn>Nunc vides, quid faciat.</dfn></dt>
+        <dd>Itaque nostrum est-quod nostrum dico, artis est-ad ea principia, quae accepimus.</dd>
+        <dt><dfn>Quis hoc dicit?</dfn></dt>
+        <dd>Sed non sunt in eo genere tantae commoditates corporis tamque productae temporibus tamque multae.</dd>
+        <dt><dfn>Qui convenit?</dfn></dt>
+        <dd>Est igitur officium eius generis, quod nec in bonis ponatur nec in contrariis.</dd>
+    </dl>
+
+
+    <pre>
+Verum hoc idem saepe faciamus.
+
+Illa argumenta propria videamus, cur omnia sint paria
+peccata.
+</pre>
+
+
+    <h3>Omnia contraria, quos etiam insanos esse vultis.</h3>
+
+    <p>Quae quo sunt excelsiores, eo dant clariora indicia naturae. Quae similitudo in genere etiam humano apparet.
+        Quid autem habent admirationis, cum prope accesseris? Neque solum ea communia, verum etiam paria esse
+        dixerunt. Tollenda est atque extrahenda radicitus. Quodsi ipsam honestatem undique pertectam atque absolutam.
+        Heri, inquam, ludis commissis ex urbe profectus veni ad vesperum. <b>Id mihi magnum videtur.</b> Quid
+        vero? </p>
+
+    <ul>
+        <li>Quid, si etiam iucunda memoria est praeteritorum malorum?</li>
+        <li>Non enim ipsa genuit hominem, sed accepit a natura inchoatum.</li>
+        <li>Cur igitur easdem res, inquam, Peripateticis dicentibus verbum nullum est, quod non intellegatur?</li>
+    </ul>
+
+
+    <blockquote cite='http://loripsum.net'>
+        Quae fere omnia appellantur uno ingenii nomine, easque virtutes qui habent, ingeniosi vocantur.
+    </blockquote>
+
+
+    <h4>Nam, ut paulo ante docui, augendae voluptatis finis est doloris omnis amotio.</h4>
+
+    <p>Ut non sine causa ex iis memoriae ducta sit disciplina. Idemque diviserunt naturam hominis in animum et corpus.
+        Egone quaeris, inquit, quid sentiam? <a href='http://loripsum.net/' target='_blank'>At ille pellit, qui permulcet sensum voluptate.</a>                    Tu vero, inquam, ducas licet, si sequetur; </p>
+
+    <p><b>Bonum integritas corporis: misera debilitas.</b> Idemque diviserunt naturam hominis in animum et corpus.
+        <i>Sed haec omittamus;</i> <a href='http://loripsum.net/' target='_blank'>Quare attende, quaeso.</a>                    Heri, inquam, ludis commissis ex urbe profectus veni ad vesperum. </p>
+
+    <h2>Parvi enim primo ortu sic iacent, tamquam omnino sine animo sint.</h2>
+
+    <p><code>Quare conare, quaeso.</code> Sin laboramus, quis est, qui alienae modum statuat industriae? At iam
+        decimum annum in spelunca iacet. Dicam, inquam, et quidem discendi causa magis, quam quo te aut Epicurum
+        reprehensum velim. Cupiditates non Epicuri divisione finiebat, sed sua satietate. Tertium autem omnibus
+        aut maximis rebus iis, quae secundum naturam sint, fruentem vivere. <a href='http://loripsum.net/' target='_blank'>Nos commodius agimus.</a>                    </p>
+
+
+</section>
+
+</main>
+
+
+<style>
+        .group {
+            display:block, 
+        }
+
+        .primary-colour-group {
+            width:100%;
+            padding: 10em 1em;
+            text-align: center;
+        }
+
+        .black-reference-group,
+        .resulting-body-colour {
+            width: 50%;
+            float: left;
+            text-align: center;
+            padding: 5em 3em;
+        }
+
+        .black-reference-group {
+            background-color: #111;
+            color: whitesmoke;
+        }
+
+
+        .resulting-body-colour{
+            position:relative;
+        }
+
+        .resulting-body-overlay {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom:0;
+            top: 0;
+            content: 'Result';
+            text-align: center;
+            vertical-align: middle;
+            color: whitesmoke;
+            background-color: #111;
+        }
+
+
+</style>
+
+<script>
+
+    function Colour(r,g,b,a) {
+        console.log(r,g,b,a)
+        validateChannelValue(r)
+        validateChannelValue(g)
+        validateChannelValue(b)
+
+        this.r =r,
+        this.g=g,
+        this.b= b,
+        this.a= a && !isNaN(a) || 1
+    }
+
+    Colour.prototype.toHex = function() {
+        var c = this.b | (this.g << 8) | (this.r << 16)
+        return '#'+c.toString(16);
+    }
+
+    var primaryColour = document.getElementById('primary-colour');
+
+    var group = document.querySelector('.primary-colour-group');
+
+    var overlay = document.querySelector('.resulting-body-overlay');
+    var underlay = document.querySelector('.resulting-body-colour');
+
+    newColour = document.querySelector('.result-2');
+
+
+
+    primaryColour.addEventListener('change', function () {
+        group.style.backgroundColor = primaryColour.value;
+        underlay.style.backgroundColor = primaryColour.value;
+
+        calculateColor(primaryColour.value, transparency.value)
+    })
+
+    var transparency = document.getElementById("transparency");
+
+    transparency.addEventListener('input', updateTransparency);
+
+    function updateTransparency() {
+        var value = parseInt(transparency.value);
+        overlay.style.opacity = value / 100;
+
+        calculateColor(primaryColour.value, transparency.value)
+    }
+
+    function calculateColor(colour, transparency) {
+        var c = fromHex(colour)
+
+        alpha = transparency / 100;
+
+        outR = mergeChannelValue(c.r, alpha);
+        outG = mergeChannelValue(c.g, alpha);
+        outB = mergeChannelValue(c.b, alpha);
+
+        console.log(outR, outB, outG);
+        var n = 'rgb(' + outR + ', ' + outG + ', ' + outB + ')';
+        newColour.style.backgroundColor = n
+
+        var test = outB | (outG << 8) | (outR << 16)
+
+        document.querySelector('.sample').style.color = n
+
+        return newColour;
+    }
+
+    function mergeChannelValue(channelValue, alpha) {
+        return Math.round((alpha * 17) + (1 - alpha) * channelValue);
+    }
+
+    
+
+    function blendStepper(colourA, colourB, steps) {
+        var cA = fromHex(colourA);
+        var cB = fromHex(colourB);
+        
+        var palette = [cA.toHex()];
+
+        var s = steps + 1;
+        var inc = {
+            r: (cB.r - cA.r) / s,
+            g: (cB.g - cA.g) / s,
+            b: (cB.b - cA.b) / s
+        }
+        for(var i= 1; i< steps+1; i++) {
+            var shade = new Colour(
+                cA.r + (inc.r * i),
+                cA.g + (inc.g * i),
+                cA.b + (inc.b * i),
+                1
+            )
+            
+            palette.push(shade.toHex());
+
+        }
+
+        palette.push(cB.toHex());
+        console.log(palette);
+    }
+
+
+    function validateChannelValue(c) {
+        if(isNaN(c) || c > 255 || c < 0)
+            throw new Error("Invalid Colour value")
+    }
+
+    
+    function fromHex(hex) {
+            hex = hex.replace('#', '');
+            r = parseInt(hex.substring(0, 2), 16);
+            g = parseInt(hex.substring(2, 4), 16);
+            b = parseInt(hex.substring(4, 6), 16);
+
+            return new Colour(r,g,b,1);
+    }
+
+    blendStepper('#FF0000', '#FF00F2', 10)
+
+</script>
+</body>
+</html>
