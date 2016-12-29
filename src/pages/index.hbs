@@ -3,7 +3,42 @@ title: The experimental labs of Ben Embery
 description: Design and development experiments to explore new HTML, CSS & JavaScript practices. 
 ---
 
-<main role="main">
-    <h1>The Lab</h1>
-    
+<main  role="main">
+    <header>
+        <h1>The Lab</h1>
+        <h2>Modern web experiments.</h2>
+    </header>
 </main>
+<style>
+    body {
+        margin: 0;
+
+    }
+
+    header {
+        background-image: linear-gradient(to right, #00D688 0%, rgb(5, 157, 101) 100%),
+            url(https://static.pexels.com/photos/8756/pexels-photo.jpg), url(https://upload.wikimedia.org/wikipedia/commons/f/fe/Erlenmeyer_flasks.jpg);
+        background-repeat: no-repeat;
+        background-blend-mode: difference,overlay,normal;
+        background-position: center;
+        background-size: cover;
+        color: white;
+        padding: 4em .5em;
+        height: 100vh;
+        width: 100vw;
+        font-size: 1.5em;
+    }
+
+    h1 {
+        margin-bottom: 0.5rem;
+    }
+
+    @media (min-width: 30em) {
+        header {
+             padding: 4em 2em;
+             font-size: 2em;
+        }
+    }
+
+</style>
+{{!-- <a title="By Stanislav.nevyhosteny (Own work) [CC BY-SA 4.0 (http://creativecommons.org/licenses/by-sa/4.0)], via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File%3AErlenmeyer_flasks.jpg"><img width="512" alt="Erlenmeyer flasks" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Erlenmeyer_flasks.jpg/512px-Erlenmeyer_flasks.jpg"/></a> --}}
