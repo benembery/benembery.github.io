@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Colour Tools | embery.co.uk</title>
+    <meta name="description" content="A few tools to help pick better colour palettes using modern web inputs." />
+    <link href="./assets/css/main.min.css" rel="stylesheet" />
+</head>
+<body>
+  <main role="main">
+    <!-- Noscript content for added SEO -->
+<noscript><a href="https://www.eventbrite.com/e/guitar-gear-chats-tickets-153986462655" rel="noopener noreferrer" target="_blank"></noscript>
+<!-- You can customize this button any way you like -->
+<button id="eventbrite-widget-modal-trigger-153986462655" type="button">Buy Tickets</button>
+<noscript></a>Buy Tickets on Eventbrite</noscript>
+
+<script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+
+<script type="text/javascript">
+    var exampleCallback = function() {
+        console.log('Order complete!');
+    };
+
+    window.EBWidgets.createWidget({
+        widgetType: 'checkout',
+        eventId: '153986462655',
+        modal: true,
+        modalTriggerElementId: 'eventbrite-widget-modal-trigger-153986462655',
+        onOrderComplete: exampleCallback
+    });
+</script>
+  </main>
+</script>
+</body>
+</html>
