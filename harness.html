@@ -9,29 +9,23 @@
 </head>
 <body>
   <main role="main">
-      
-      <iframe src="https://staging.adaptivewebworks.co.uk/iframe.html" width="100%" height="600" />
-    <!-- Noscript content for added SEO -->
-<noscript><a href="https://www.eventbrite.com/e/guitar-gear-chats-tickets-153986462655" rel="noopener noreferrer" target="_blank"></noscript>
-<!-- You can customize this button any way you like -->
-<button id="eventbrite-widget-modal-trigger-153986462655" type="button">Buy Tickets</button>
-<noscript></a>Buy Tickets on Eventbrite</noscript>
+      <div id="9urLE6YIvYE4asJvpP5pXpEJY" class="hopin-container"></div>
 
-<script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+<script>
 
-<script type="text/javascript">
-    var exampleCallback = function() {
-        console.log('Order complete!');
-    };
+(function() {
+  var container = document.getElementById('9urLE6YIvYE4asJvpP5pXpEJY')  
 
-    window.EBWidgets.createWidget({
-        widgetType: 'checkout',
-        eventId: '153986462655',
-        modal: true,
-        modalTriggerElementId: 'eventbrite-widget-modal-trigger-153986462655',
-        onOrderComplete: exampleCallback
-    });
+  var iframe =  document.createElement('iframe');
+
+  iframe.src = 'https://dev.registration.hopin.com/widgets/registration/embery-reg-ii?widget_id=9urLE6YIvYE4asJvpP5pXpEJY' + window.location.search.replace('?', '&');
+
+  container.appendChild(iframe);
+
+})();
+
 </script>
+      
   </main>
 </script>
 </body>
